@@ -12,12 +12,14 @@ public class SDETool : Gtk.Window {
         this.add (box);
 
         var notebook = new Gtk.Notebook ();
-        box.add (notebook);
+        box.pack_start (notebook, true, true, 0);
 
-        var page1 = new Gtk.Box(Gtk.Orientation.VERTICAL, 0);
-        var lab1 = new Gtk.Label("Title is string");
+        var page1 = new Gtk.ScrolledWindow (null, null);
+        page1.set_policy (
+            Gtk.PolicyType.AUTOMATIC,
+            Gtk.PolicyType.AUTOMATIC
+        );
 
-        page1.add(lab1);
         notebook.append_page(page1, new Gtk.Label("Main"));
     }
 }

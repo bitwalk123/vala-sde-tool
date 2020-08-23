@@ -5,7 +5,7 @@ dependencies = [
     meson.get_compiler('c').find_library('m', required: false),
 ]
 
-sources = files('main.vala', 'main_gui.vala')
+sources = files('main.vala', 'main_gui.vala', 'container.vala')
 if meson.is_cross_build()
     winmod = import('windows')
     sources += winmod.compile_resources('tool.rc')
