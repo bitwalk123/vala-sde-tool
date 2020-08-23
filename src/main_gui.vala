@@ -11,6 +11,9 @@ public class SDETool : Gtk.Window {
         var box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
         this.add (box);
 
+        var mbar = new MyContainer ();
+        box.pack_start (mbar, false, true, 0);
+
         var notebook = new Gtk.Notebook ();
         box.pack_start (notebook, true, true, 0);
 
