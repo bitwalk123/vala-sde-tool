@@ -1,6 +1,7 @@
 using Gtk;
 
 public class SDETool : Gtk.Window {
+    protected string app_ver = "0.1";
 
     public SDETool () {
         this.destroy.connect (Gtk.main_quit);
@@ -57,27 +58,19 @@ public class SDETool : Gtk.Window {
 
     // Dialog Application Information
     void on_clicked_app_info (Gtk.Button button) {
-        var dialog = new Gtk.Dialog.with_buttons (
-            "About", this, Gtk.DialogFlags.MODAL,
-            "_OK", Gtk.ResponseType.NONE,
-            null
-        );
-        var content = dialog.get_content_area ();
-
-        var box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
-        content.add (box);
-
-        var lab1 = new Gtk.Label ("SDE Tool (Vala edition)");
-        box.pack_start (lab1, true, true, 0);
-
-        var lab2 = new Gtk.Label ("version 0.1");
-        box.pack_start (lab2, true, true, 0);
-
-        var lab3 = new Gtk.Label ("(C) 2020 Keiichi Takahashi");
-        box.pack_start (lab3, true, true, 0);
+        var dialog = new AppVerDialog ("About", this, this.app_ver);
 
         dialog.response.connect (dialog.destroy);
         dialog.show_all ();
     }
+}
+
+public static int main (string[] args) {
+    Gtk.init (ref args);
+
+    var app = new SDETool ();
+    app.show_all ();
+    Gtk.main ();
+    return 0;
 }
 
