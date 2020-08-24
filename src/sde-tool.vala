@@ -43,7 +43,7 @@ public class SDETool : Gtk.Window {
 
     // Dialog Application Information
     void on_clicked_app_info (Gtk.Button button) {
-        var dialog = new AppVerDialog ("About", this, this.app_ver);
+        var dialog = new AppVerDialog (this, this.app_ver);
 
         dialog.response.connect (dialog.destroy);
         dialog.show_all ();
