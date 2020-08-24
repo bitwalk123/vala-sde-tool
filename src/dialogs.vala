@@ -20,7 +20,10 @@ public class AppVerDialog : Gtk.Dialog {
         var lab_ver = new Gtk.Label ("version " + version);
         box.pack_start (lab_ver, true, true, 0);
 
-        var lab_author = new Gtk.Label ("(C) 2020 Keiichi Takahashi");
+        var lab_author = new Gtk.Label ("Copyright 2020 Keiichi Takahashi");
         box.pack_start (lab_author, true, true, 0);
+
+        var lab_license = new Gtk.Label ("under Apache License 2.0");
+        box.pack_start (lab_license, true, true, 0);
     }
 }
