@@ -4,6 +4,7 @@ public class AppVerDialog : Gtk.Dialog {
     public AppVerDialog (string title, Gtk.Window parent, string version) {
         this.set_icon_name("dialog-information");
         this.set_title(title);
+        this.set_resizable(false);
         this.set_modal (true);
         this.add_button ("_OK", Gtk.ResponseType.NONE);
 

@@ -1,7 +1,7 @@
 using Gtk;
 
 public class SDETool : Gtk.Window {
-    protected string app_ver = "0.1";
+    protected string app_ver = "0.0.1";
 
     public SDETool () {
         this.destroy.connect (Gtk.main_quit);
