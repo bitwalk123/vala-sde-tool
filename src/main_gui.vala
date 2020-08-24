@@ -8,6 +8,9 @@ public class SDETool : Gtk.Window {
         this.set_default_size(800, 400);
         this.border_width = 1;
 
+        //var cssProvider = new Gtk.CssProvider ();
+        //cssProvider.load_from_path ("sde-tool.css");
+
         var box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
         this.add (box);
 
@@ -64,7 +67,7 @@ public class SDETool : Gtk.Window {
         var box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
         content.add (box);
 
-        var lab1 = new Gtk.Label ("SDE Tool");
+        var lab1 = new Gtk.Label ("SDE Tool (Vala edition)");
         box.pack_start (lab1, true, true, 0);
 
         var lab2 = new Gtk.Label ("version 0.1");
