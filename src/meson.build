@@ -5,7 +5,9 @@ dependencies = [
     meson.get_compiler('c').find_library('m', required: false),
 ]
 
-sources = files('sde-tool.vala', 'dialogs.vala')
+sources = files(
+  'sde-tool.vala', 'dialogs.vala', 'menubar.vala',
+)
 if meson.is_cross_build()
     winmod = import('windows')
     sources += winmod.compile_resources('tool.rc')
