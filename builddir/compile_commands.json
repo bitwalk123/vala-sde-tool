@@ -1,0 +1,20 @@
+[
+  {
+    "directory": "D:\\msys64\\home\\KTAKAHAS\\vala-sde-tool\\builddir",
+    "command": "\"valac\" \"-C\" \"--debug\" \"--debug\" \"--pkg\" \"gtk+-3.0\" \"--pkg\" \"gobject-2.0\" \"--pkg\" \"glib-2.0\" \"--color=always\" \"--directory\" \"src/sde-tool.exe.p\" \"--basedir\" \"../src\" ../src/main.vala ../src/main_gui.vala",
+    "file": "../src/main.vala",
+    "output": "src/sde-tool.exe.p/main.c"
+  },
+  {
+    "directory": "D:\\msys64\\home\\KTAKAHAS\\vala-sde-tool\\builddir",
+    "command": "\"cc\" \"-Isrc/sde-tool.exe.p\" \"-Isrc\" \"-I../src\" \"-ID:/msys64/mingw64/include/glib-2.0\" \"-ID:/msys64/mingw64/lib/glib-2.0/include\" \"-ID:/msys64/mingw64/include\" \"-ID:/msys64/mingw64/include/gtk-3.0\" \"-ID:/msys64/mingw64/include/cairo\" \"-ID:/msys64/mingw64/include/pango-1.0\" \"-ID:/msys64/mingw64/include/fribidi\" \"-ID:/msys64/mingw64/include/atk-1.0\" \"-ID:/msys64/mingw64/include/pixman-1\" \"-ID:/msys64/mingw64/include/freetype2\" \"-ID:/msys64/mingw64/include/harfbuzz\" \"-ID:/msys64/mingw64/include/libpng16\" \"-ID:/msys64/mingw64/include/gdk-pixbuf-2.0\" \"-fdiagnostics-color=always\" \"-pipe\" \"-D_FILE_OFFSET_BITS=64\" \"-w\" \"-g\" \"-pthread\" \"-mms-bitfields\" \"-mms-bitfields\" \"-mms-bitfields\" -MD -MQ src/sde-tool.exe.p/meson-generated_main.c.obj -MF \"src/sde-tool.exe.p/meson-generated_main.c.obj.d\" -o src/sde-tool.exe.p/meson-generated_main.c.obj \"-c\" src/sde-tool.exe.p/main.c",
+    "file": "src/sde-tool.exe.p/main.c",
+    "output": "src/sde-tool.exe.p/meson-generated_main.c.obj"
+  },
+  {
+    "directory": "D:\\msys64\\home\\KTAKAHAS\\vala-sde-tool\\builddir",
+    "command": "\"cc\" \"-Isrc/sde-tool.exe.p\" \"-Isrc\" \"-I../src\" \"-ID:/msys64/mingw64/include/glib-2.0\" \"-ID:/msys64/mingw64/lib/glib-2.0/include\" \"-ID:/msys64/mingw64/include\" \"-ID:/msys64/mingw64/include/gtk-3.0\" \"-ID:/msys64/mingw64/include/cairo\" \"-ID:/msys64/mingw64/include/pango-1.0\" \"-ID:/msys64/mingw64/include/fribidi\" \"-ID:/msys64/mingw64/include/atk-1.0\" \"-ID:/msys64/mingw64/include/pixman-1\" \"-ID:/msys64/mingw64/include/freetype2\" \"-ID:/msys64/mingw64/include/harfbuzz\" \"-ID:/msys64/mingw64/include/libpng16\" \"-ID:/msys64/mingw64/include/gdk-pixbuf-2.0\" \"-fdiagnostics-color=always\" \"-pipe\" \"-D_FILE_OFFSET_BITS=64\" \"-w\" \"-g\" \"-pthread\" \"-mms-bitfields\" \"-mms-bitfields\" \"-mms-bitfields\" -MD -MQ src/sde-tool.exe.p/meson-generated_main_gui.c.obj -MF \"src/sde-tool.exe.p/meson-generated_main_gui.c.obj.d\" -o src/sde-tool.exe.p/meson-generated_main_gui.c.obj \"-c\" src/sde-tool.exe.p/main_gui.c",
+    "file": "src/sde-tool.exe.p/main_gui.c",
+    "output": "src/sde-tool.exe.p/meson-generated_main_gui.c.obj"
+  }
+]

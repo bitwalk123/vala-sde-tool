@@ -1,0 +1,63 @@
+Build started at 2020-08-24T15:02:36.215434
+Main binary: D:/msys64/mingw64/bin/python.exe
+Build Options: -Dbackend=ninja
+Python system: Windows
+The Meson build system
+Version: 0.55.1
+Source dir: D:/msys64/home/KTAKAHAS/vala-sde-tool
+Build dir: D:/msys64/home/KTAKAHAS/vala-sde-tool/builddir
+Build type: native build
+Using 'PKG_CONFIG_PATH' from environment with value: 'D:\\msys64\\mingw64\\lib\\pkgconfig;D:\\msys64\\mingw64\\share\\pkgconfig'
+WARNING: PKG_CONFIG_PATH environment variable has changed between configurations, meson ignores this. Use -Dpkg_config_path to change pkg-config search path instead.
+Using 'PKG_CONFIG_PATH' from environment with value: 'D:\\msys64\\mingw64\\lib\\pkgconfig;D:\\msys64\\mingw64\\share\\pkgconfig'
+WARNING: PKG_CONFIG_PATH environment variable has changed between configurations, meson ignores this. Use -Dpkg_config_path to change pkg-config search path instead.
+Project name: SDE Tool
+Project version: 0.0.1
+C compiler for the build machine: cc (gcc 10.2.0 "cc (Rev1, Built by MSYS2 project) 10.2.0")
+C linker for the build machine: cc ld.bfd 2.34
+None of 'AR' are defined in the environment, not changing global flags.
+Vala compiler for the build machine: valac (valac 0.48.8)
+C compiler for the host machine: cc (gcc 10.2.0 "cc (Rev1, Built by MSYS2 project) 10.2.0")
+C linker for the host machine: cc ld.bfd 2.34
+None of 'AR' are defined in the environment, not changing global flags.
+Vala compiler for the host machine: valac (valac 0.48.8)
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Target machine cpu family: x86_64
+Target machine cpu: x86_64
+Dependency glib-2.0 found: YES 2.64.3 (cached)
+Dependency gobject-2.0 found: YES 2.64.3 (cached)
+Dependency gtk+-3.0 found: YES 3.24.20 (cached)
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  D:/msys64/home/KTAKAHAS/vala-sde-tool/builddir/meson-private/tmpnmdbabm1
+Command line:  cc D:/msys64/home/KTAKAHAS/vala-sde-tool/builddir/meson-private/tmpnmdbabm1/testfile.c -o D:/msys64/home/KTAKAHAS/vala-sde-tool/builddir/meson-private/tmpnmdbabm1/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lm -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library m found: YES
+Build targets in project: 1
+
+Found ninja.EXE-1.10.0 at D:\msys64\mingw64\bin/ninja.EXE
+Running compile:
+Working directory:  D:/msys64/home/KTAKAHAS/vala-sde-tool/builddir/meson-private/tmpjbg5u0qu
+Command line:  cc D:/msys64/home/KTAKAHAS/vala-sde-tool/builddir/meson-private/tmpjbg5u0qu/testfile.c -o D:/msys64/home/KTAKAHAS/vala-sde-tool/builddir/meson-private/tmpjbg5u0qu/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ install: D:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/10.2.0/
+programs: =D:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/10.2.0/;D:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/10.2.0/;D:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/;D:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/10.2.0/;D:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/;D:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/10.2.0/../../../../x86_64-w64-mingw32/bin/x86_64-w64-mingw32/10.2.0/;D:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/10.2.0/../../../../x86_64-w64-mingw32/bin/
+libraries: =D:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/10.2.0/;D:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/10.2.0/../../../../x86_64-w64-mingw32/lib/x86_64-w64-mingw32/10.2.0/;D:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/10.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;D:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/10.2.0/../../../x86_64-w64-mingw32/10.2.0/;D:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/10.2.0/../../../../lib/;D:/msys64/mingw64/x86_64-w64-mingw32/lib/x86_64-w64-mingw32/10.2.0/;D:/msys64/mingw64/x86_64-w64-mingw32/lib/../lib/;D:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/10.2.0/../../../../x86_64-w64-mingw32/lib/;D:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/10.2.0/../../../;D:/msys64/mingw64/x86_64-w64-mingw32/lib/
+
+Compiler stderr:
+ 
+None of 'STRIP' are defined in the environment, not changing global flags.
+None of 'STRIP' are defined in the environment, not changing global flags.
