@@ -30,9 +30,9 @@ public class AppVerDialog : Gtk.Dialog {
     //    Gtk.Box box - box layout container for dialog messages
     // ------------------------------------------------------------------------
     public void set_contents(Gtk.Box box) {
-        var lab_title = new Gtk.Label ("SDE Tool (Vala edition)");
-        lab_title.get_style_context().add_class("vertitle");
-        box.pack_start (lab_title, true, true, 0);
+        var lab_name = new Gtk.Label ("SDE Tool (Vala edition)");
+        lab_name.get_style_context().add_class("appname");
+        box.pack_start (lab_name, true, true, 0);
 
         var lab_ver = new Gtk.Label ("version " + this.version);
         box.pack_start (lab_ver, true, true, 0);
