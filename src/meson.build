@@ -6,7 +6,7 @@ dependencies = [
 ]
 
 sources = files(
-  'sde-tool.vala', 'dialogs.vala', 'menubar.vala',
+  'sde-tool.vala', 'dialogs.vala', 'menubar.vala', 'css.vala',
 )
 if meson.is_cross_build()
     winmod = import('windows')

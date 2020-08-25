@@ -53,11 +53,12 @@ public class SDETool : Gtk.Window {
 public static int main (string[] args) {
     Gtk.init (ref args);
 
+    var css = new AppCss();
     var css_provider = new Gtk.CssProvider();
     try {
-        css_provider.load_from_path("sde-tool.css");
+        css_provider.load_from_data(css.get());
     } catch (GLib.Error e) {
-        warning ("Style sheet did not load: %s", e.message);
+        warning ("Style sheet data did not load: %s", e.message);
     }
     Gtk.StyleContext.add_provider_for_screen (
         Gdk.Screen.get_default(),
