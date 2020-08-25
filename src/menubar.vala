@@ -1,8 +1,8 @@
 using Gtk;
 
-// ----------------------------------------------------------------------------
-//  button bar for main panel
-// ----------------------------------------------------------------------------
+// ============================================================================
+//  MainBar - button bar for main panel
+// ============================================================================
 public class MainBar : Gtk.Box {
     Gtk.Button but_config;
     Gtk.Button but_add;
@@ -30,8 +30,18 @@ public class MainBar : Gtk.Box {
         this.pack_end (but_info, false, true, 0);
     }
     
+    // ------------------------------------------------------------------------
+    //  get_instance - return instance of specified button
+    //
+    //  argument:
+    //    string name - name of button
+    // ------------------------------------------------------------------------
     public Gtk.Button get_instance(string name) {
         switch (name) {
+            case "config":
+                return(this.but_config);
+            case "add":
+                return(this.but_add);
             case "info":
                 return(this.but_info);
             case "exit":

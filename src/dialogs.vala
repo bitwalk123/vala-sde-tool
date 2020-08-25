@@ -1,7 +1,13 @@
 using Gtk;
 
+// ============================================================================
+//  AppVerDialog - Dialog for Application Version
+// ============================================================================
 public class AppVerDialog : Gtk.Dialog {
+    string version;
+
     public AppVerDialog (Gtk.Window parent, string version) {
+        this.version = version;
         this.set_icon_name("dialog-information");
         this.set_title("About");
         this.set_resizable(false);
@@ -9,15 +15,26 @@ public class AppVerDialog : Gtk.Dialog {
         this.add_button ("_OK", Gtk.ResponseType.NONE);
 
         var content = this.get_content_area ();
-
         var box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
-        box.set_spacing (2);
+        box.set_spacing (0);
         content.add (box);
 
-        var lab_main = new Gtk.Label ("SDE Tool (Vala edition)");
-        box.pack_start (lab_main, true, true, 0);
+        // implemet contents of the dialog
+        this.set_contents(box);
+    }
 
-        var lab_ver = new Gtk.Label ("version " + version);
+    // ------------------------------------------------------------------------
+    //  set_contents
+    //
+    //  argument:
+    //    Gtk.Box box - box layout container for dialog messages
+    // ------------------------------------------------------------------------
+    public void set_contents(Gtk.Box box) {
+        var lab_title = new Gtk.Label ("SDE Tool (Vala edition)");
+        lab_title.get_style_context().add_class("title");
+        box.pack_start (lab_title, true, true, 0);
+
+        var lab_ver = new Gtk.Label ("version " + this.version);
         box.pack_start (lab_ver, true, true, 0);
 
         var lab_author = new Gtk.Label ("Copyright 2020 Keiichi Takahashi");
