@@ -14,19 +14,19 @@ public class MainBar : Gtk.Box {
         this.set_spacing(0);
 
         // button for application config
-        this.but_config = new Gtk.Button.from_icon_name ("emblem-system", Gtk.IconSize.BUTTON);;
+        this.but_config = new Gtk.Button.from_icon_name ("emblem-system", Gtk.IconSize.DND);
         this.pack_start (but_config, false, true, 0);
 
         // button for application add
-        this.but_add = new Gtk.Button.from_icon_name ("list-add", Gtk.IconSize.BUTTON);;
+        this.but_add = new Gtk.Button.from_icon_name ("list-add", Gtk.IconSize.DND);
         this.pack_start (but_add, false, true, 0);
 
         // button for application exit
-        this.but_exit = new Gtk.Button.from_icon_name ("application-exit", Gtk.IconSize.BUTTON);
+        this.but_exit = new Gtk.Button.from_icon_name ("application-exit", Gtk.IconSize.DND);
         this.pack_end (but_exit, false, true, 0);
 
         // button for application information
-        this.but_info = new Gtk.Button.from_icon_name ("dialog-information", Gtk.IconSize.BUTTON);;
+        this.but_info = new Gtk.Button.from_icon_name ("dialog-information", Gtk.IconSize.DND);
         this.pack_end (but_info, false, true, 0);
     }
     
